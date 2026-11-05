@@ -57,6 +57,4 @@ Opcional: `N_ITER=100 jupyter lab` aumenta el número de configuraciones por cla
 - Rutas relativas.
 - El tiempo de búsqueda depende de la máquina (SVM y regresión logística son los más lentos).
 
-## Resultados
 
-_Completar con la tabla comparativa y el clasificador elegido tras ejecutar el notebook con los datos reales._
