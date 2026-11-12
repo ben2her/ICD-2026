@@ -1,0 +1,17 @@
+modelo,familia,F1 macro (media ± desv.),sens_enrolled,t. entrenamiento por pliegue (s),t. búsqueda (s),configuración
+XGBoost,boosting optimizado,0.696 ± 0.011,0.626771653543307,1.6634451866149902,280.98724270800017,"class_weight=balanced, colsample_bytree=0.7341, gamma=0.0106, learning_rate=0.019, max_depth=3, min_child_weight=3.2, n_estimators=500, reg_alpha=0.2161, reg_lambda=0.0194, subsample=0.9872"
+LightGBM,boosting optimizado,0.689 ± 0.016,0.4645669291338582,3.041187286376953,232.04749779300005,"class_weight=balanced, colsample_bytree=0.9337, learning_rate=0.0195, min_child_samples=17, n_estimators=500, num_leaves=34, reg_alpha=0.0323, reg_lambda=0.0139, subsample=0.8091"
+Stacking (meta: reg. logística),combinar base,0.687 ± 0.008,0.6173228346456693,24.673930406570435,,
+Votación dura (5 base),combinar base,0.681 ± 0.013,0.5417322834645669,3.1621582984924315,,
+Random Forest,bagging optimizado,0.681 ± 0.008,0.4708661417322834,2.210399055480957,395.251252917,"class_weight=balanced_subsample, criterion=log_loss, max_depth=None, max_features=0.2, min_samples_leaf=5, min_frequency=0.03"
+Regresión logística,base (Práctica 3),0.679 ± 0.011,0.5748031496062992,2.0895873069763184,,
+Votación suave (5 base),combinar base,0.678 ± 0.011,0.4519685039370079,4.2989277839660645,,
+SVM,base (Práctica 3),0.676 ± 0.008,0.5779527559055118,1.2985511779785157,,
+Extra-Trees,bagging optimizado,0.668 ± 0.009,0.4409448818897638,6.683770751953125,283.3840886139999,"bootstrap=False, class_weight=balanced, criterion=gini, max_depth=20, max_features=0.7, min_samples_leaf=3, min_frequency=0.005"
+Bagging (400 árboles sin límite),varianza,0.660 ± 0.022,0.3401574803149606,14.69899135339997,,"n_estimators=400, bootstrap, warm_start"
+Árbol,base (Práctica 3),0.644 ± 0.015,0.5700787401574804,0.06099557876586914,,
+"AdaBoost (400 rondas, tocones)",sesgo,0.638 ± 0.010,0.27244094488188975,3.8926668910000215,,"n_estimators=400, learning_rate=1.0"
+Naive Bayes,base (Práctica 3),0.625 ± 0.014,0.4866141732283465,0.05276103019714355,,
+Árbol sin límite de profundidad,varianza,0.591 ± 0.027,0.3732283464566929,0.09700508117675781,,
+kNN,base (Práctica 3),0.560 ± 0.027,0.21732283464566932,0.03432035446166992,,
+Tocón (profundidad 1),sesgo,0.492 ± 0.012,0.0,0.03403029441833496,,
