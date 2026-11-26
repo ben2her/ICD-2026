@@ -46,11 +46,6 @@ jupyter lab
 
 Abre `proyecto_similitud_fotos_benjamin.ipynb` y usa *Restart Kernel and Run All*. Todo el trabajo, incluida la extracción de ResNet-50,
 ocurre dentro del notebook; no hay scripts de entrenamiento aparte. Semillas fijas (`SEED = 42`, derivadas `+1`, `+2`, `+3`) y rutas relativas.
-Después puedes comprobar la entrega:
-
-```bash
-python verificar_notebook.py proyecto_similitud_fotos_v6.ipynb
-```
 
 ## Estructura de archivos
 
@@ -60,7 +55,6 @@ python verificar_notebook.py proyecto_similitud_fotos_v6.ipynb
 ├── README.md
 ├── requirements.txt                    # versiones mínimas
 ├── requirements-lock.txt               # versiones exactas (se genera al ejecutar)
-├── verificar_notebook.py               # revisa contadores, errores y salidas
 ├── .gitignore
 ├── mis_fotos/                          # (no se sube) tus originales
 ├── originales/  dataset/  cache/       # (no se suben) generados por el notebook
